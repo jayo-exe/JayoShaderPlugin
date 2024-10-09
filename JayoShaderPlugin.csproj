@@ -40,6 +40,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="dist\" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="copy &quot;$(TargetDir)JayoShaderPlugin.dll&quot; &quot;$(TargetDir)..\..\..\..\..\..\..\VNyanPlugins\Assets\JayoShaderPlugin\Plugins&quot; /Y" />
   </Target>
